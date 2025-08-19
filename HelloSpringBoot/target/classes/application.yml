@@ -1,0 +1,53 @@
+#library:
+#  books:
+#    - name: jack
+#      time: 2020/11/19
+#      price: 10.9
+#      map: {k1: v1, k2: v2}
+#      list:
+#        - s1
+#        - s2
+#        - s3
+#      math:
+#        teacherName: jerry
+#        nums: 10
+#    - name: rose
+#      time: 2021/05/01
+#      price: 20.5
+#      map: {k1: v11, k2: v22}
+#      list:
+#        - s4
+#        - s5
+#      math:
+#        teacherName: tom
+#        nums: 20
+
+server:
+  port: 8080
+spring:
+  profiles:
+    active: prod
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+server:
+  port: 8099
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      database: 0
+      timeout: 6000
+server:
+  port: 8090
+
+ollama:
+  base-url: http://localhost:11434
+  model: deepseek-r1:latest

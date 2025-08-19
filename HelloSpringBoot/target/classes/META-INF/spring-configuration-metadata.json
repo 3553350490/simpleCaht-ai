@@ -1,0 +1,67 @@
+{
+  "groups": [
+    {
+      "name": "book",
+      "type": "com.cuit.pojo.Book",
+      "sourceType": "com.cuit.pojo.Book"
+    },
+    {
+      "name": "library",
+      "type": "com.cuit.pojo.Library",
+      "sourceType": "com.cuit.pojo.Library"
+    },
+    {
+      "name": "math",
+      "type": "com.cuit.pojo.Math",
+      "sourceType": "com.cuit.pojo.Math"
+    }
+  ],
+  "properties": [
+    {
+      "name": "book.list",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.cuit.pojo.Book"
+    },
+    {
+      "name": "book.map",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.cuit.pojo.Book"
+    },
+    {
+      "name": "book.math",
+      "type": "com.cuit.pojo.Math",
+      "sourceType": "com.cuit.pojo.Book"
+    },
+    {
+      "name": "book.name",
+      "type": "java.lang.String",
+      "sourceType": "com.cuit.pojo.Book"
+    },
+    {
+      "name": "book.price",
+      "type": "java.lang.Double",
+      "sourceType": "com.cuit.pojo.Book"
+    },
+    {
+      "name": "book.time",
+      "type": "java.util.Date",
+      "sourceType": "com.cuit.pojo.Book"
+    },
+    {
+      "name": "library.books",
+      "type": "java.util.List<com.cuit.pojo.Book>",
+      "sourceType": "com.cuit.pojo.Library"
+    },
+    {
+      "name": "math.nums",
+      "type": "java.lang.Integer",
+      "sourceType": "com.cuit.pojo.Math"
+    },
+    {
+      "name": "math.teacher-name",
+      "type": "java.lang.String",
+      "sourceType": "com.cuit.pojo.Math"
+    }
+  ],
+  "hints": []
+}
